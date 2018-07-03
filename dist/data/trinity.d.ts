@@ -21,7 +21,7 @@ export declare class Trinity {
      * @param rendererOptions Any options you want to pass to the renderer.
      * @returns The render of the QR code in the requested format.
      */
-    static paymentQR(paymentData: ITrinityPayment, rendererType: string, cellSize?: number, marginSize?: number, rendererOptions?: any): Promise<any>;
+    static paymentQR(paymentData: ITrinityPayment, rendererType: string, cellSize?: number, marginSize?: number, rendererOptions?: any): Promise<string | Uint8Array>;
     /**
      * Convert address data into a QR code.
      * @param address The address to convert.
@@ -31,5 +31,5 @@ export declare class Trinity {
      * @param rendererOptions Any options you want to pass to the renderer.
      * @returns The render of the QR code in the requested format.
      */
-    static addressQR(address: string, rendererType: string, cellSize?: number, marginSize?: number, rendererOptions?: any): Promise<any>;
+    static addressQR(address: string, rendererType: string, cellSize?: number, marginSize?: number, rendererOptions?: any): Promise<string | Uint8Array>;
 }

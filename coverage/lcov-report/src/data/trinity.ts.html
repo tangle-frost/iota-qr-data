@@ -334,7 +334,7 @@ export class Trinity {
      * @param rendererOptions Any options you want to pass to the renderer.
      * @returns The render of the QR code in the requested format.
      */
-    public <span class="fstat-no" title="function not covered" >static</span> async paymentQR(paymentData: ITrinityPayment, rendererType: string, cellSize?: number, marginSize?: number, rendererOptions?: any): Promise&lt;any&gt; {
+    public <span class="fstat-no" title="function not covered" >static</span> async paymentQR(paymentData: ITrinityPayment, rendererType: string, cellSize?: number, marginSize?: number, rendererOptions?: any): Promise&lt;string | Uint8Array&gt; {
         const renderer = <span class="cstat-no" title="statement not covered" >QRRendererFactory.instance().create(rendererType, rendererOptions);</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >        if (ObjectHelper.isEmpty(renderer)) {</span>
@@ -342,10 +342,10 @@ export class Trinity {
         }
 &nbsp;
         const qr = <span class="cstat-no" title="statement not covered" >new QR();</span>
-<span class="cstat-no" title="statement not covered" >        qr.addData(JSON.stringify(paymentData));</span>
+<span class="cstat-no" title="statement not covered" >        qr.addText(JSON.stringify(paymentData));</span>
         const qrCellData = <span class="cstat-no" title="statement not covered" >qr.generate();</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        return renderer.render(qrCellData, cellSize, marginSize);</span>
+<span class="cstat-no" title="statement not covered" >        return renderer.renderRaw(qrCellData, cellSize, marginSize);</span>
     }
 &nbsp;
     /**
@@ -357,7 +357,7 @@ export class Trinity {
      * @param rendererOptions Any options you want to pass to the renderer.
      * @returns The render of the QR code in the requested format.
      */
-    public <span class="fstat-no" title="function not covered" >static</span> async addressQR(address: string, rendererType: string, cellSize?: number, marginSize?: number, rendererOptions?: any): Promise&lt;any&gt; {
+    public <span class="fstat-no" title="function not covered" >static</span> async addressQR(address: string, rendererType: string, cellSize?: number, marginSize?: number, rendererOptions?: any): Promise&lt;string | Uint8Array&gt; {
 <span class="cstat-no" title="statement not covered" >        if (!TrytesHelper.isTrytes(address)) {</span>
 <span class="cstat-no" title="statement not covered" >            throw new Error("The address does not appear to be in valid trytes format");</span>
         }
@@ -373,10 +373,10 @@ export class Trinity {
         }
 &nbsp;
         const qr = <span class="cstat-no" title="statement not covered" >new QR();</span>
-<span class="cstat-no" title="statement not covered" >        qr.addData(address);</span>
+<span class="cstat-no" title="statement not covered" >        qr.addText(address);</span>
         const qrCellData = <span class="cstat-no" title="statement not covered" >qr.generate();</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        return renderer.render(qrCellData, cellSize, marginSize);</span>
+<span class="cstat-no" title="statement not covered" >        return renderer.renderRaw(qrCellData, cellSize, marginSize);</span>
     }
 }
 &nbsp;</pre></td></tr>

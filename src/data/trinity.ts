@@ -64,7 +64,7 @@ export class Trinity {
      * @param rendererOptions Any options you want to pass to the renderer.
      * @returns The render of the QR code in the requested format.
      */
-    public static async paymentQR(paymentData: ITrinityPayment, rendererType: string, cellSize?: number, marginSize?: number, rendererOptions?: any): Promise<any> {
+    public static async paymentQR(paymentData: ITrinityPayment, rendererType: string, cellSize?: number, marginSize?: number, rendererOptions?: any): Promise<string | Uint8Array> {
         const renderer = QRRendererFactory.instance().create(rendererType, rendererOptions);
 
         if (ObjectHelper.isEmpty(renderer)) {
@@ -72,10 +72,10 @@ export class Trinity {
         }
 
         const qr = new QR();
-        qr.addData(JSON.stringify(paymentData));
+        qr.addText(JSON.stringify(paymentData));
         const qrCellData = qr.generate();
 
-        return renderer.render(qrCellData, cellSize, marginSize);
+        return renderer.renderRaw(qrCellData, cellSize, marginSize);
     }
 
     /**
@@ -87,7 +87,7 @@ export class Trinity {
      * @param rendererOptions Any options you want to pass to the renderer.
      * @returns The render of the QR code in the requested format.
      */
-    public static async addressQR(address: string, rendererType: string, cellSize?: number, marginSize?: number, rendererOptions?: any): Promise<any> {
+    public static async addressQR(address: string, rendererType: string, cellSize?: number, marginSize?: number, rendererOptions?: any): Promise<string | Uint8Array> {
         if (!TrytesHelper.isTrytes(address)) {
             throw new Error("The address does not appear to be in valid trytes format");
         }
@@ -103,9 +103,9 @@ export class Trinity {
         }
 
         const qr = new QR();
-        qr.addData(address);
+        qr.addText(address);
         const qrCellData = qr.generate();
 
-        return renderer.render(qrCellData, cellSize, marginSize);
+        return renderer.renderRaw(qrCellData, cellSize, marginSize);
     }
 }

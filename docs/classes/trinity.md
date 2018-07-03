@@ -24,7 +24,7 @@ Class to helper render data for trinity as QR.
 
 ### `<Static>` addressQR
 
-▸ **addressQR**(address: *`string`*, rendererType: *`string`*, cellSize?: *`number`*, marginSize?: *`number`*, rendererOptions?: *`any`*): `Promise`<`any`>
+▸ **addressQR**(address: *`string`*, rendererType: *`string`*, cellSize?: *`number`*, marginSize?: *`number`*, rendererOptions?: *`any`*): `Promise`< `string` &#124; `Uint8Array`>
 
 *Defined in data/trinity.ts:90*
 
@@ -40,7 +40,7 @@ Convert address data into a QR code.
 | `Optional` marginSize | `number` |  The margin size in pixels to leave around the qr code. |
 | `Optional` rendererOptions | `any` |  Any options you want to pass to the renderer. |
 
-**Returns:** `Promise`<`any`>
+**Returns:** `Promise`< `string` &#124; `Uint8Array`>
 The render of the QR code in the requested format.
 
 ___
@@ -71,7 +71,7 @@ ___
 
 ### `<Static>` paymentQR
 
-▸ **paymentQR**(paymentData: *[ITrinityPayment](../interfaces/itrinitypayment.md)*, rendererType: *`string`*, cellSize?: *`number`*, marginSize?: *`number`*, rendererOptions?: *`any`*): `Promise`<`any`>
+▸ **paymentQR**(paymentData: *[ITrinityPayment](../interfaces/itrinitypayment.md)*, rendererType: *`string`*, cellSize?: *`number`*, marginSize?: *`number`*, rendererOptions?: *`any`*): `Promise`< `string` &#124; `Uint8Array`>
 
 *Defined in data/trinity.ts:67*
 
@@ -87,7 +87,7 @@ Convert trinity payment data into a QR code.
 | `Optional` marginSize | `number` |  The margin size in pixels to leave around the qr code. |
 | `Optional` rendererOptions | `any` |  Any options you want to pass to the renderer. |
 
-**Returns:** `Promise`<`any`>
+**Returns:** `Promise`< `string` &#124; `Uint8Array`>
 The render of the QR code in the requested format.
 
 ___
