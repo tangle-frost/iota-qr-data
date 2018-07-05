@@ -47,6 +47,7 @@
         "dist": "npm-run-all build test pkg docs"
     },
     "dependencies": {
+        "@tangle-frost/iota-core": "^0.0.1",
         "@tangle-frost/iota-qr-core": "^0.0.1",
         "@tangle-frost/iota-qr-render": "^0.0.1"
     },
