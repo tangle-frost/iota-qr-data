@@ -2,7 +2,7 @@
  * Tests for TrinityPaymentQR.
  */
 import * as chai from "chai";
-import { TrinityPaymentQR } from "../../src/data/TrinityPaymentQR";
+import { TrinityPaymentQR } from "../../src/data/trinityPaymentQR";
 
 describe("TrinityPaymentQR", () => {
     it("can be created", () => {
