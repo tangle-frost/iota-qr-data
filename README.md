@@ -12,7 +12,7 @@ npm install @tangle-frost/iota-qr-data --save
 
 # Documentation
 
-Documentation for the code can be found in [docs](./docs/README.md) folder.
+Documentation for the code can be found in [docs](https://github.com/tangle-frost/iota-qr-data/blob/master/docs/README.md) folder.
 
 # Contributing
 
@@ -36,4 +36,4 @@ QWJXX99QDEYWUWXEGA9QXSNOWOKHMFKCMSZTXDFLRZAFQRPQTHQDXSZWQQTAHNDNRYHMIKJYWQLKTFHB
 
 # License
 
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/tangle-frost/iota-qr-data/blob/master/LICENSE) file for details.
