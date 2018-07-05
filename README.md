@@ -28,7 +28,7 @@ Come and find us on the IOTA [Discord](https://discordapp.com/invite/fNGZXvh) de
 
 IOTA donations are always welcome :smile:
 
-![QR Code for Trinity](./donation.png)
+![QR Code for Trinity](https://raw.githubusercontent.com/tangle-frost/iota-qr-data/master/donation.png)
 
 ```shell
 QWJXX99QDEYWUWXEGA9QXSNOWOKHMFKCMSZTXDFLRZAFQRPQTHQDXSZWQQTAHNDNRYHMIKJYWQLKTFHBWSAOJDHAMB
