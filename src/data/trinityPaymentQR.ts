@@ -9,9 +9,9 @@ import { ITrinityPayment } from "../models/ITrinityPayment";
 /**
  * Class to helper render data for trinity as QR.
  */
-export class Trinity {
+export class TrinityPaymentQR {
     /**
-     * Create the QR code data for trinity.
+     * Create the QR code data for trinity payment data.
      * @param address The address trytes.
      * @param amountIota The amount for the transaction.
      * @param tagTrytes The tag for the transaction in trytes.
@@ -65,7 +65,7 @@ export class Trinity {
      * @param rendererOptions Any options you want to pass to the renderer.
      * @returns The render of the QR code in the requested format.
      */
-    public static async paymentQRRaw(
+    public static async renderRaw(
         paymentData: ITrinityPayment,
         rendererType: string,
         qrTypeNumber: number = 16,
@@ -95,7 +95,7 @@ export class Trinity {
      * @param rendererOptions Any options you want to pass to the renderer.
      * @returns The render of the QR code in the requested format.
      */
-    public static async paymentQRHtml(
+    public static async renderHtml(
         paymentData: ITrinityPayment,
         rendererType: string,
         qrTypeNumber: number = 16,
@@ -110,78 +110,6 @@ export class Trinity {
 
         const qr = new QR(qrTypeNumber);
         qr.addText(JSON.stringify(paymentData));
-        const qrCellData = qr.generate();
-
-        return renderer.renderHtml(qrCellData, cellSize, marginSize);
-    }
-
-    /**
-     * Convert address data into a QR code raw data.
-     * @param address The address to convert.
-     * @param rendererType The type of render to use.
-     * @param cellSize The size in pixels of each cell.
-     * @param marginSize The margin size in pixels to leave around the qr code.
-     * @param rendererOptions Any options you want to pass to the renderer.
-     * @returns The render of the QR code in the requested format.
-     */
-    public static async addressQRRaw(
-        address: string,
-        rendererType: string,
-        cellSize?: number,
-        marginSize?: number,
-        rendererOptions?: any): Promise<string | Uint8Array> {
-        if (!TrytesHelper.isTrytes(address)) {
-            throw new Error("The address does not appear to be in valid trytes format");
-        }
-
-        if (address.length !== 90) {
-            throw new Error(`The address must be 90 trytes long and include the checksum, it is ${address.length}`);
-        }
-
-        const renderer = QRRendererFactory.instance().create(rendererType, rendererOptions);
-
-        if (ObjectHelper.isEmpty(renderer)) {
-            throw new Error(`The QR Renderer '${rendererType} is not available`);
-        }
-
-        const qr = new QR(5);
-        qr.addText(address);
-        const qrCellData = qr.generate();
-
-        return renderer.renderRaw(qrCellData, cellSize, marginSize);
-    }
-
-    /**
-     * Convert address data into a QR code html element.
-     * @param address The address to convert.
-     * @param rendererType The type of render to use.
-     * @param cellSize The size in pixels of each cell.
-     * @param marginSize The margin size in pixels to leave around the qr code.
-     * @param rendererOptions Any options you want to pass to the renderer.
-     * @returns The render of the QR code in the requested format.
-     */
-    public static async addressQRHtml(
-        address: string,
-        rendererType: string,
-        cellSize?: number,
-        marginSize?: number,
-        rendererOptions?: any): Promise<Element> {
-        if (!TrytesHelper.isTrytes(address)) {
-            throw new Error("The address does not appear to be in valid trytes format");
-        }
-
-        if (address.length !== 90) {
-            throw new Error(`The address must be 90 trytes long and include the checksum, it is ${address.length}`);
-        }
-
-        const renderer = QRRendererFactory.instance().create(rendererType, rendererOptions);
-
-        if (ObjectHelper.isEmpty(renderer)) {
-            throw new Error(`The QR Renderer '${rendererType} is not available`);
-        }
-
-        const qr = new QR(5);
-        qr.addText(address);
         const qrCellData = qr.generate();
 
         return renderer.renderHtml(qrCellData, cellSize, marginSize);

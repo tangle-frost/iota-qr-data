@@ -5,7 +5,8 @@
 
 ### Classes
 
-* [Trinity](classes/trinity.md)
+* [AddressQR](classes/addressqr.md)
+* [TrinityPaymentQR](classes/trinitypaymentqr.md)
 
 ### Interfaces
 

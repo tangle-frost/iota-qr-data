@@ -2,9 +2,9 @@ import { ITrinityPayment } from "../models/ITrinityPayment";
 /**
  * Class to helper render data for trinity as QR.
  */
-export declare class Trinity {
+export declare class TrinityPaymentQR {
     /**
-     * Create the QR code data for trinity.
+     * Create the QR code data for trinity payment data.
      * @param address The address trytes.
      * @param amountIota The amount for the transaction.
      * @param tagTrytes The tag for the transaction in trytes.
@@ -22,7 +22,7 @@ export declare class Trinity {
      * @param rendererOptions Any options you want to pass to the renderer.
      * @returns The render of the QR code in the requested format.
      */
-    static paymentQRRaw(paymentData: ITrinityPayment, rendererType: string, qrTypeNumber?: number, cellSize?: number, marginSize?: number, rendererOptions?: any): Promise<string | Uint8Array>;
+    static renderRaw(paymentData: ITrinityPayment, rendererType: string, qrTypeNumber?: number, cellSize?: number, marginSize?: number, rendererOptions?: any): Promise<string | Uint8Array>;
     /**
      * Convert trinity payment data into a QR code html element.
      * @param paymentData The payment data to convert.
@@ -33,25 +33,5 @@ export declare class Trinity {
      * @param rendererOptions Any options you want to pass to the renderer.
      * @returns The render of the QR code in the requested format.
      */
-    static paymentQRHtml(paymentData: ITrinityPayment, rendererType: string, qrTypeNumber?: number, cellSize?: number, marginSize?: number, rendererOptions?: any): Promise<Element>;
-    /**
-     * Convert address data into a QR code raw data.
-     * @param address The address to convert.
-     * @param rendererType The type of render to use.
-     * @param cellSize The size in pixels of each cell.
-     * @param marginSize The margin size in pixels to leave around the qr code.
-     * @param rendererOptions Any options you want to pass to the renderer.
-     * @returns The render of the QR code in the requested format.
-     */
-    static addressQRRaw(address: string, rendererType: string, cellSize?: number, marginSize?: number, rendererOptions?: any): Promise<string | Uint8Array>;
-    /**
-     * Convert address data into a QR code html element.
-     * @param address The address to convert.
-     * @param rendererType The type of render to use.
-     * @param cellSize The size in pixels of each cell.
-     * @param marginSize The margin size in pixels to leave around the qr code.
-     * @param rendererOptions Any options you want to pass to the renderer.
-     * @returns The render of the QR code in the requested format.
-     */
-    static addressQRHtml(address: string, rendererType: string, cellSize?: number, marginSize?: number, rendererOptions?: any): Promise<Element>;
+    static renderHtml(paymentData: ITrinityPayment, rendererType: string, qrTypeNumber?: number, cellSize?: number, marginSize?: number, rendererOptions?: any): Promise<Element>;
 }
