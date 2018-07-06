@@ -25,7 +25,7 @@ Class to helper render addresses as QR.
 
 ▸ **renderHtml**(address: *`string`*, rendererType: *`string`*, cellSize?: *`number`*, marginSize?: *`number`*, rendererOptions?: *`any`*): `Promise`<`Element`>
 
-*Defined in data/addressQR.ts:55*
+*Defined in [data/addressQR.ts:55](https://github.com/tangle-frost/iota-qr-data/tree/master/src/data/addressQR.ts#L55*
 
 Convert address data into a QR code html element.
 
@@ -49,7 +49,7 @@ ___
 
 ▸ **renderRaw**(address: *`string`*, rendererType: *`string`*, cellSize?: *`number`*, marginSize?: *`number`*, rendererOptions?: *`any`*): `Promise`< `string` &#124; `Uint8Array`>
 
-*Defined in data/addressQR.ts:19*
+*Defined in [data/addressQR.ts:19](https://github.com/tangle-frost/iota-qr-data/tree/master/src/data/addressQR.ts#L19*
 
 Convert address data into a QR code raw data.
 

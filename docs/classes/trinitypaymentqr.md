@@ -26,7 +26,7 @@ Class to helper render data for trinity as QR.
 
 ▸ **generatePaymentData**(address: *`string`*, amountIota?: *`number`*, tagTrytes?: *`string`*, message?: *`string`*): [ITrinityPayment](../interfaces/itrinitypayment.md)
 
-*Defined in data/trinityPaymentQR.ts:21*
+*Defined in [data/trinityPaymentQR.ts:21](https://github.com/tangle-frost/iota-qr-data/tree/master/src/data/trinityPaymentQR.ts#L21*
 
 Create the QR code data for trinity payment data.
 
@@ -49,7 +49,7 @@ ___
 
 ▸ **renderHtml**(paymentData: *[ITrinityPayment](../interfaces/itrinitypayment.md)*, rendererType: *`string`*, qrTypeNumber?: *`number`*, cellSize?: *`number`*, marginSize?: *`number`*, rendererOptions?: *`any`*): `Promise`<`Element`>
 
-*Defined in data/trinityPaymentQR.ts:98*
+*Defined in [data/trinityPaymentQR.ts:98](https://github.com/tangle-frost/iota-qr-data/tree/master/src/data/trinityPaymentQR.ts#L98*
 
 Convert trinity payment data into a QR code html element.
 
@@ -74,7 +74,7 @@ ___
 
 ▸ **renderRaw**(paymentData: *[ITrinityPayment](../interfaces/itrinitypayment.md)*, rendererType: *`string`*, qrTypeNumber?: *`number`*, cellSize?: *`number`*, marginSize?: *`number`*, rendererOptions?: *`any`*): `Promise`< `string` &#124; `Uint8Array`>
 
-*Defined in data/trinityPaymentQR.ts:68*
+*Defined in [data/trinityPaymentQR.ts:68](https://github.com/tangle-frost/iota-qr-data/tree/master/src/data/trinityPaymentQR.ts#L68*
 
 Convert trinity payment data into a QR code raw data.
 

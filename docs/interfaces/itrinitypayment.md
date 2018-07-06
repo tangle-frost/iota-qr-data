@@ -28,7 +28,7 @@ Definition of a Trinity payment.
 
 **● address**: *`string`*
 
-*Defined in models/ITrinityPayment.ts:6*
+*Defined in [models/ITrinityPayment.ts:6](https://github.com/tangle-frost/iota-qr-data/tree/master/src/models/ITrinityPayment.ts#L6*
 
 ___
 <a id="amount"></a>
@@ -37,7 +37,7 @@ ___
 
 **● amount**: *`number`*
 
-*Defined in models/ITrinityPayment.ts:7*
+*Defined in [models/ITrinityPayment.ts:7](https://github.com/tangle-frost/iota-qr-data/tree/master/src/models/ITrinityPayment.ts#L7*
 
 ___
 <a id="message"></a>
@@ -46,7 +46,7 @@ ___
 
 **● message**: *`string`*
 
-*Defined in models/ITrinityPayment.ts:9*
+*Defined in [models/ITrinityPayment.ts:9](https://github.com/tangle-frost/iota-qr-data/tree/master/src/models/ITrinityPayment.ts#L9*
 
 ___
 <a id="tag"></a>
@@ -55,7 +55,7 @@ ___
 
 **● tag**: *`string`*
 
-*Defined in models/ITrinityPayment.ts:8*
+*Defined in [models/ITrinityPayment.ts:8](https://github.com/tangle-frost/iota-qr-data/tree/master/src/models/ITrinityPayment.ts#L8*
 
 ___
 

@@ -1,6 +1,6 @@
 {
     "name": "@tangle-frost/iota-qr-data",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Tangle Frost IOTA QR Data",
     "typings": "dist/index.d.ts",
     "main": "dist/index.js",
@@ -47,9 +47,9 @@
         "dist": "npm-run-all build test pkg docs"
     },
     "dependencies": {
-        "@tangle-frost/iota-core": "^0.0.4",
-        "@tangle-frost/iota-qr-core": "^0.0.4",
-        "@tangle-frost/iota-qr-render": "^0.0.4"
+        "@tangle-frost/iota-core": "^0.0.5",
+        "@tangle-frost/iota-qr-core": "^0.0.5",
+        "@tangle-frost/iota-qr-render": "^0.0.5"
     },
     "devDependencies": {
         "@babel/core": "^7.0.0-beta.42",
@@ -58,7 +58,7 @@
         "@babel/runtime": "^7.0.0-beta.42",
         "@types/chai": "^4.1.4",
         "@types/mocha": "^5.2.4",
-        "@types/node": "^10.5.1",
+        "@types/node": "^10.5.2",
         "babel-loader": "^8.0.0-beta.0",
         "babel-plugin-transform-builtin-extend": "^1.1.2",
         "chai": "^4.1.2",
@@ -79,7 +79,7 @@
         "typedoc-plugin-markdown": "^1.1.13",
         "typescript": "^2.9.2",
         "uglifyjs-webpack-plugin": "^1.2.7",
-        "webpack": "^4.15.0",
+        "webpack": "^4.15.1",
         "webpack-cli": "^3.0.6"
     }
 }
