@@ -171,7 +171,7 @@
         "no-suspicious-comment": true,
         "no-typeof-undefined": false,
         "no-unnecessary-field-initialization": true,
-        "no-unnecessary-local-variable": true,
+        "no-unnecessary-local-variable": false,
         "no-unnecessary-qualifier": true,
         "no-unsupported-browser-code": true,
         "no-useless-files": true,
@@ -334,6 +334,8 @@
                 "requireParamDescription": true,
                 "requireReturnDescription": true
             }
-        ]
+        ],
+        "file-name-casing": false,
+        "no-unused-variable": false
     }
 }
