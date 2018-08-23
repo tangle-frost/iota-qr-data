@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.7
+
+* Updated readme
+
 ## v0.0.6
 
 * Widened range of targeted browser support
