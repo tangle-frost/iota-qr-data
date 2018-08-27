@@ -1,6 +1,6 @@
 {
     "name": "@tangle-frost/iota-qr-data",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "Tangle Frost IOTA QR Data",
     "typings": "dist/index.d.ts",
     "main": "dist/index.js",
@@ -47,9 +47,9 @@
         "dist": "npm-run-all build test pkg docs"
     },
     "dependencies": {
-        "@tangle-frost/iota-core": "^0.0.8",
-        "@tangle-frost/iota-qr-core": "^0.0.8",
-        "@tangle-frost/iota-qr-render": "^0.0.8"
+        "@tangle-frost/iota-core": "^0.0.9",
+        "@tangle-frost/iota-qr-core": "^0.0.9",
+        "@tangle-frost/iota-qr-render": "^0.0.9"
     },
     "devDependencies": {
         "@babel/core": "^7.0.0-beta.42",
