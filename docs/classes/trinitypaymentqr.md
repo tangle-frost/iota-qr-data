@@ -32,7 +32,7 @@ Create the QR code data for trinity payment data.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | address | `string` |  The address trytes. |
 | `Optional` amountIota | `number` |  The amount for the transaction. |
@@ -55,7 +55,7 @@ Convert trinity payment data into a QR code html element.
 
 **Parameters:**
 
-| Param | Type | Default value | Description |
+| Name | Type | Default value | Description |
 | ------ | ------ | ------ | ------ |
 | paymentData | [ITrinityPayment](../interfaces/itrinitypayment.md) | - |  The payment data to convert. |
 | rendererType | `string` | - |  The type of render to use. |
@@ -80,7 +80,7 @@ Convert trinity payment data into a QR code raw data.
 
 **Parameters:**
 
-| Param | Type | Default value | Description |
+| Name | Type | Default value | Description |
 | ------ | ------ | ------ | ------ |
 | paymentData | [ITrinityPayment](../interfaces/itrinitypayment.md) | - |  The payment data to convert. |
 | rendererType | `string` | - |  The type of render to use. |

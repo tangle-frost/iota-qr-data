@@ -31,7 +31,7 @@ Convert address data into a QR code html element.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | address | `string` |  The address to convert. |
 | rendererType | `string` |  The type of render to use. |
@@ -55,7 +55,7 @@ Convert address data into a QR code raw data.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | address | `string` |  The address to convert. |
 | rendererType | `string` |  The type of render to use. |
