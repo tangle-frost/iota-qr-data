@@ -47,7 +47,7 @@ ___
 
 ### `<Static>` renderRaw
 
-▸ **renderRaw**(address: *`string`*, rendererType: *`string`*, cellSize?: *`number`*, marginSize?: *`number`*, rendererOptions?: *`any`*): `Promise`< `string` &#124; `Uint8Array`>
+▸ **renderRaw**(address: *`string`*, rendererType: *`string`*, cellSize?: *`number`*, marginSize?: *`number`*, rendererOptions?: *`any`*): `Promise`<`string` | `Uint8Array`>
 
 *Defined in [data/addressQR.ts:19](https://github.com/tangle-frost/iota-qr-data/tree/master/src/data/addressQR.ts#L19*
 
@@ -63,7 +63,7 @@ Convert address data into a QR code raw data.
 | `Optional` marginSize | `number` |  The margin size in pixels to leave around the qr code. |
 | `Optional` rendererOptions | `any` |  Any options you want to pass to the renderer. |
 
-**Returns:** `Promise`< `string` &#124; `Uint8Array`>
+**Returns:** `Promise`<`string` | `Uint8Array`>
 The render of the QR code in the requested format.
 
 ___

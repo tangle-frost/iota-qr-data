@@ -72,7 +72,7 @@ ___
 
 ### `<Static>` renderRaw
 
-▸ **renderRaw**(paymentData: *[ITrinityPayment](../interfaces/itrinitypayment.md)*, rendererType: *`string`*, qrTypeNumber?: *`number`*, cellSize?: *`number`*, marginSize?: *`number`*, rendererOptions?: *`any`*): `Promise`< `string` &#124; `Uint8Array`>
+▸ **renderRaw**(paymentData: *[ITrinityPayment](../interfaces/itrinitypayment.md)*, rendererType: *`string`*, qrTypeNumber?: *`number`*, cellSize?: *`number`*, marginSize?: *`number`*, rendererOptions?: *`any`*): `Promise`<`string` | `Uint8Array`>
 
 *Defined in [data/trinityPaymentQR.ts:68](https://github.com/tangle-frost/iota-qr-data/tree/master/src/data/trinityPaymentQR.ts#L68*
 
@@ -89,7 +89,7 @@ Convert trinity payment data into a QR code raw data.
 | `Optional` marginSize | `number` | - |  The margin size in pixels to leave around the qr code. |
 | `Optional` rendererOptions | `any` | - |  Any options you want to pass to the renderer. |
 
-**Returns:** `Promise`< `string` &#124; `Uint8Array`>
+**Returns:** `Promise`<`string` | `Uint8Array`>
 The render of the QR code in the requested format.
 
 ___
