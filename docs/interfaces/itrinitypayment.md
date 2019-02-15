@@ -3,6 +3,7 @@
 # Interface: ITrinityPayment
 
 Definition of a Trinity payment.
+
 *__interface__*: 
 
 ## Hierarchy
