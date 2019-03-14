@@ -199,7 +199,7 @@ function () {
                 return _context.stop();
             }
           }
-        }, _callee, this);
+        }, _callee);
       }));
 
       function renderRaw(_x, _x2, _x3, _x4, _x5) {
@@ -265,7 +265,7 @@ function () {
                 return _context2.stop();
             }
           }
-        }, _callee2, this);
+        }, _callee2);
       }));
 
       function renderHtml(_x6, _x7, _x8, _x9, _x10) {
@@ -435,7 +435,7 @@ function () {
                 return _context.stop();
             }
           }
-        }, _callee, this);
+        }, _callee);
       }));
 
       function renderRaw(_x, _x2) {
@@ -497,7 +497,7 @@ function () {
                 return _context2.stop();
             }
           }
-        }, _callee2, this);
+        }, _callee2);
       }));
 
       function renderHtml(_x3, _x4) {
